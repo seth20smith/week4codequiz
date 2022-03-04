@@ -1,0 +1,75 @@
+
+
+ :root { background-color: purple;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+text-align: center;
+flex-wrap: column;
+margin-bottom: 30px;
+}
+
+.btn{
+    color: purple;
+    padding: 10px;
+    width: 100px ;
+    background-color: silver;
+    align-items: right;
+}
+
+btn:hover{
+    color: yellow;
+}
+
+timer {
+    text-align: right;
+    font-display: rights;
+
+}
+
+.quiz-question{
+    display: inline;
+    text-shadow: red;
+    font-size: 50px;
+    
+}
+
+.container{
+    width: 100;
+    height: 100;
+    display: flexbox;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.highestscore-btn{
+    background-color: silver;
+    padding: 100px;
+    align-items: left;
+}
+
+
+$[start].on{'click', function(){
+    
+
+
+}
