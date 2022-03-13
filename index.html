@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz Challenge</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <script src="script.js"></script>
+<body> 
     
     <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <p class="timer"> Timer:</p>
-            <a href="/HighestScores.html" id="highestscore-btn">View Highest Scores</a>
-            <h1> The Coding Quiz Challenge </h1>
+        <!-- <div id="home" class="flex-column flex-center">
+            <p class="timer"> Timer:</p> -->
+            <a href="./HighestScores.html" id="highestscore-btn">View Highest Scores</a>
+            <h1> The Coding Genius Challenge </h1>
         </div>
 
-<div>
+<!-- <div>
     <div class="quiz-question">
         <h3>Questions</h3>
         <ul>
@@ -30,14 +29,8 @@
 
         <a href="/script.js" class="btn">Submit</a>
 
-</div>
-<nav>
-    <div>
-       <a href="scoreboard.html" class="score" ><div>Check the Scoreboard</div></a> 
-    </div>
+</div> -->
 
-    <div class="timer">Time: <span id="time">15</span></div>
-</nav>
 <section class="wrapper">
 
     <div class="start-screen" id="start-screen">
@@ -48,31 +41,19 @@
             Answer the following quesitons within the time limit. The faster you answer the higher your score. BUT
             BE CAREFUl! Answering incorrectly will hurt your score and time.
         </p>
-        <button id="start-button">Start Now</button>
+        <button id="start-button" onclick="StartGame()">
+            <a href="./1stQuestion.html" onclick="StartGame()">
+                Start Now
+            </a>
+        </button>
     </div>
 
-    <div id="questionArray" class="hide">
-        <h2 class="question-text" id="question-text"></h2>
+   
 
-        <div class="possible-answers" id="possible-answers"></div>
-    </div>
 
-    <div id="end" class="hide">
-        <h2>Finished</h2>
-        <p>Your score is <span id="final-score"></span></p>
-        <br>
-        <p>Enter a name for your score:
-        <form id="form">
-            <input type="text" id="username" max="7">
-            <button id="enter">Enter</button>
-        </form>
-        </p>
-    </div>
-
-    <div id="finish" class="finish hide"></div>
 </section>
-<script src="Assets/JS/questions.js"></script>
-<script src="Assets/JS/script.js"></script>
+
+<script src="./assets/js/script.js"></script>
 
         <main>
 

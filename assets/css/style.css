@@ -1,0 +1,24 @@
+
+#highScore {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#timer {
+    text-align: end;
+}
+.wrapper {
+    
+    padding-top: 15%;
+    padding-left: 30%;
+}
+.container{
+    width: 300px;
+
+    
+}
+#start {
+    font-size: xx-large;
+    font-weight: bold;
+}
