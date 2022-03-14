@@ -14,7 +14,7 @@ highscores.push(scoreText.value+': '+score)
 localStorage.setItem(('highscores'), JSON.stringify(highscores))
 }
 
-if (window.location == 'http://127.0.0.1:5500/week4codequiz/HighestScores.html'){
+if (window.location == 'https://seth20smith.github.io/week4codequiz/HighestScores.html'){
     // if(JSON.parse(localStorage.getItem('highscores')).length > 0){
         console.log(JSON.parse(localStorage.getItem('highscores')).length > 0)
         let highscores = JSON.parse(localStorage.getItem('highscores'))
@@ -31,7 +31,7 @@ if (window.location == 'http://127.0.0.1:5500/week4codequiz/HighestScores.html')
         `;
         
     }
-    } else {document.querySelector('#final-score').innerHTML = score}
+    } else if(window.location == 'https://seth20smith.github.io/week4codequiz/highScore.html') {document.querySelector('#final-score').innerHTML = score}
 
     
 
