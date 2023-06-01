@@ -9,7 +9,7 @@
 <body>
     <a href="./HighestScores.html" id="highestscore-btn">View Highest Scores</a>
 
-    <div id="end" class="hide">
+    <div id="end">
         <h2>Finished</h2>
         <p>Your score is: <span id="final-score"></span></p>
         <br>
@@ -21,8 +21,13 @@
         </p>
     </div>
 
-    <ol> </ol>
+    <ol></ol>
 
     <script src="./assets/js/script.js"></script>
+
+    <script>
+        // set score as the inner HTML of #final-score
+        document.getElementById('final-score').innerHTML = localStorage.getItem('score');
+      </script>
 </body>
 </html>
